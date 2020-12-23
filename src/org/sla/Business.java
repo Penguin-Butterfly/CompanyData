@@ -1,7 +1,6 @@
 package org.sla;
 
 class Business {
-    // Fields
     int rank;
     String Name;
     float Revenue;
