@@ -45,4 +45,10 @@ class InternetCom extends Business{
     void setFiscalYear(int fiscalYear) {
         FiscalYear = fiscalYear;
     }
+
+    public String toString() {
+        String desc = "";
+        desc += "Company: " + this.getName() + ", " + this.getHQLocation() + ", " + this.getFoundingYear();
+        return desc;
+    }
 }

@@ -44,4 +44,10 @@ class Business {
     void setEmployeeCt(int employeeCt) {
         EmployeeCt = employeeCt;
     }
+
+    public String toString() {
+        String desc = "";
+        desc += "Company: " + this.getName() + ", " + this.getRank() + ", " + this.getRevenue();
+        return desc;
+    }
 }

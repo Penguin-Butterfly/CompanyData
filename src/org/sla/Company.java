@@ -35,4 +35,11 @@ class Company extends Business{
     void setIndustry(String industry) {
         Industry = industry;
     }
+
+
+    public String toString() {
+        String desc = "";
+        desc += "Company: " + this.getName() + ", " + this.getIndustry() + ", " + this.getCountry();
+        return desc;
+    }
 }
