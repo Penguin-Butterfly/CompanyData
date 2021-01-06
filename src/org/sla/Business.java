@@ -14,6 +14,9 @@ class Business {
         Name = name;
         Revenue = revenue;
         EmployeeCt = employeeCt;
+
+        if (Businesses == null) Businesses = new ArrayList<Business>();
+        Businesses.add(this);
     }
 
     int getRank() {
@@ -55,6 +58,6 @@ class Business {
     }
 
     static void describeAll() {
-        Businesses.forEach(film -> System.out.println(Businesses.toString());
+        Businesses.forEach(film -> System.out.println(Businesses.toString()));
     }
 }

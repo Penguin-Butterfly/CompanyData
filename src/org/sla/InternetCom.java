@@ -6,12 +6,11 @@ class InternetCom extends Business{
     private int FoundingYear;
     private int FiscalYear;
 
-    public InternetCom(int rank, String name, float revenue, int employeeCt, String HQLocation, float marketCap, int foundingYear, int fiscalYear) {
+    public InternetCom(int rank, String name, float revenue, int employeeCt, String HQLocation, float marketCap, int foundingYear) {
         super(rank, name, revenue, employeeCt);
         this.HQLocation = HQLocation;
         MarketCap = marketCap;
         FoundingYear = foundingYear;
-        FiscalYear = fiscalYear;
     }
 
     String getHQLocation() {
