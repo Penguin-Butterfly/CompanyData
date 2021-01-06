@@ -1,6 +1,9 @@
 package org.sla;
 
+import java.util.ArrayList;
+
 class Business {
+    private static ArrayList<Business> Businesses;
     private int rank;
     private String Name;
     private float Revenue;
@@ -49,5 +52,9 @@ class Business {
         String desc = "";
         desc += "Company: " + this.getName() + ", " + this.getRank() + ", " + this.getRevenue();
         return desc;
+    }
+
+    static void describeAll() {
+        Businesses.forEach(film -> System.out.println(Businesses.toString());
     }
 }
