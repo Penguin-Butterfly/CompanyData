@@ -1,12 +1,12 @@
 package org.sla;
 
-class InternetCom extends Business{
+class DotCom extends Business{
     private String HQLocation;
     private float MarketCap;
     private int FoundingYear;
     private int FiscalYear;
 
-    public InternetCom(int rank, String name, float revenue, int employeeCt, String HQLocation, float marketCap, int foundingYear) {
+    public DotCom(int rank, String name, float revenue, int employeeCt, String HQLocation, float marketCap, int foundingYear) {
         super(rank, name, revenue, employeeCt);
         this.HQLocation = HQLocation;
         MarketCap = marketCap;

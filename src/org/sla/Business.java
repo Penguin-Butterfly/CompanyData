@@ -58,6 +58,6 @@ class Business {
     }
 
     static void describeAll() {
-        Businesses.forEach(film -> System.out.println(Businesses.toString()));
+        Businesses.forEach(Business -> System.out.println(Business.toString()));
     }
 }
