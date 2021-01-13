@@ -2,10 +2,10 @@ package org.sla;
 
 class Company extends Business{
     private String Country;
-    private float profit;
+    private double profit;
     private String Industry;
 
-    Company(int rank, String name, float revenue, int employeeCt, String country, float profit, String industry) {
+    Company(int rank, String name, double revenue, int employeeCt, String country, float profit, String industry) {
         super(rank, name, revenue, employeeCt);
         Country = country;
         this.profit = profit;
@@ -20,7 +20,7 @@ class Company extends Business{
         Country = country;
     }
 
-    float getProfit() {
+    double getProfit() {
         return profit;
     }
 

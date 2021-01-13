@@ -6,10 +6,10 @@ class Business {
     private static ArrayList<Business> Businesses;
     private int rank;
     private String Name;
-    private float Revenue;
+    private double Revenue;
     private int EmployeeCt;
 
-    public Business(int rank, String name, float revenue, int employeeCt) {
+    public Business(int rank, String name, double revenue, int employeeCt) {
         this.rank = rank;
         Name = name;
         Revenue = revenue;
@@ -35,7 +35,7 @@ class Business {
         Name = name;
     }
 
-    float getRevenue() {
+    double getRevenue() {
         return Revenue;
     }
 
