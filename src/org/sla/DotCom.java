@@ -1,5 +1,6 @@
 package org.sla;
 
+import java.io.File;
 import java.util.Scanner;
 
 class DotCom extends Business{
@@ -23,7 +24,7 @@ class DotCom extends Business{
         this.HQLocation = HQLocation;
     }
 
-    float getMarketCap() {
+    double getMarketCap() {
         return MarketCap;
     }
 
@@ -58,16 +59,16 @@ class DotCom extends Business{
         try {
             File file = new File(dataFilePath);
             scanner = new Scanner(file);
-        } catch (IOException i) {
-            i.printStackTrace();
+        } catch (Exception ex) {
+            ex.printStackTrace();
             System.out.println("Can't open " + dataFilePath);
         }
         if (scanner == null){
             return;
         }
         while (scanner.hasNext()) {
-            String next = scanner/nextLine();
-            Scanner lineScanner = new Scanner(next):
+            String next = scanner.nextLine();
+            Scanner lineScanner = new Scanner(next);
             lineScanner.useDelimiter("\t");
 
             int rank = lineScanner.nextInt();
