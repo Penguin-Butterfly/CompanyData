@@ -54,30 +54,40 @@ class DotCom extends Business{
         return desc;
     }
 
-    static void read(String dataFilePath) {
+    static void read(String datafilePath) {
+        File file = new File(datafilePath);
         Scanner scanner = null;
         try {
-            File file = new File(dataFilePath);
             scanner = new Scanner(file);
         } catch (Exception ex) {
             ex.printStackTrace();
-            System.out.println("Can't open " + dataFilePath);
+            System.out.println("Can't open " + datafilePath);
         }
-        if (scanner == null){
-            return;
-        }
-        while (scanner.hasNext()) {
+
+        while (scanner.hasNextLine()) {
             String next = scanner.nextLine();
             Scanner lineScanner = new Scanner(next);
             lineScanner.useDelimiter("\t");
 
             int rank = lineScanner.nextInt();
+
             String name = lineScanner.next();
+
             long revenue = lineScanner.nextLong();
+
             int FY = lineScanner.nextInt();
+
             int employeeCt = lineScanner.nextInt();
-            long marketCap = lineScanner.nextLong();
+
+            long marketCap;
+            String mCap = lineScanner.next();
+            if (mCap.contains("-")) {
+                marketCap = 0;
+            }
+            else marketCap = long.parse(mCap);
+
             String HQLocation = lineScanner.next();
+
             int foundingYear = lineScanner.nextInt();
 
 
