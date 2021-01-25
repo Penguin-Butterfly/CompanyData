@@ -84,7 +84,7 @@ class DotCom extends Business{
             if (mCap.contains("-")) {
                 marketCap = 0;
             }
-            else marketCap = long.parse(mCap);
+            else marketCap = Long.parseLong(mCap);
 
             String HQLocation = lineScanner.next();
 
