@@ -70,7 +70,7 @@ class Company extends Business{
             Scanner lineScanner = new Scanner(next);
             lineScanner.useDelimiter("\t");
 
-
+//idk
             int ranking = lineScanner.nextInt();
             int peak = lineScanner.nextInt();
             String title = lineScanner.next();
