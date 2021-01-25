@@ -77,6 +77,13 @@ class Company extends Business{
             long revenue = lineScanner.nextLong();
             int year = lineScanner.nextInt();
 
+            int rank;
+            int name;
+            int employeeCt;
+            int country;
+            int profit;
+            int industry;
+
             BusinessData businessData = new Company(rank, name,revenue,employeeCt, country, profit, industry);
         }
     }
