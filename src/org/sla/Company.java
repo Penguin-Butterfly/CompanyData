@@ -80,10 +80,10 @@ class Company extends Business{
             String name = lineScanner.next();
             int employeeCt = lineScanner.nextInt();
             String country = lineScanner.next();
-            int profit =lineScanner.nextInt();
-            String industry =lineScanner.next();
+            int profit = lineScanner.nextInt();
+            String industry = lineScanner.next();
 
-            Company businessData = new Company(rank, name,revenue,employeeCt, country, profit, industry);
+            Company businessData = new Company(rank, name, revenue, employeeCt, country, profit, industry);
         }
     }
 }
