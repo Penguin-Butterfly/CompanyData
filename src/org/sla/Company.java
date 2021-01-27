@@ -69,7 +69,6 @@ class Company extends Business{
             String next = scanner.nextLine();
             Scanner lineScanner = new Scanner(next);
             lineScanner.useDelimiter("\t");
-
 //idk
             int ranking = lineScanner.nextInt();
             int peak = lineScanner.nextInt();
@@ -77,14 +76,14 @@ class Company extends Business{
             long revenue = lineScanner.nextLong();
             int year = lineScanner.nextInt();
 
-            int rank;
-            int name;
-            int employeeCt;
-            int country;
-            int profit;
-            int industry;
+            int rank = lineScanner.nextInt();
+            String name = lineScanner.next();
+            int employeeCt = lineScanner.nextInt();
+            String country = lineScanner.next();
+            int profit =lineScanner.nextInt();
+            String industry =lineScanner.next();
 
-            BusinessData businessData = new Company(rank, name,revenue,employeeCt, country, profit, industry);
+            Company businessData = new Company(rank, name,revenue,employeeCt, country, profit, industry);
         }
     }
 }
