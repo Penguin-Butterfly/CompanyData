@@ -90,6 +90,7 @@ class DotCom extends Business{
 
             int foundingYear = lineScanner.nextInt();
 
+            String Citation = lineScanner.next();
 
             new DotCom(rank, name, revenue, employeeCt, HQLocation, marketCap, foundingYear);
         }
