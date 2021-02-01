@@ -73,24 +73,22 @@ class DotCom extends Business{
 
             String name = lineScanner.next();
 
-            long revenue = lineScanner.nextLong();
+            float revenue = lineScanner.nextFloat();
 
             int FY = lineScanner.nextInt();
 
             int employeeCt = lineScanner.nextInt();
 
-            long marketCap;
+            float marketCap;
             String mCap = lineScanner.next();
             if (mCap.contains("-")) {
                 marketCap = 0;
             }
-            else marketCap = Long.parseLong(mCap);
+            else marketCap = Float.parseFloat(mCap);
 
             String HQLocation = lineScanner.next();
 
             int foundingYear = lineScanner.nextInt();
-
-            String Citation = lineScanner.next();
 
             new DotCom(rank, name, revenue, employeeCt, HQLocation, marketCap, foundingYear);
         }
